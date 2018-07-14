@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-size: 16px; }
+
+#viewport {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  top: 0;
+  left: 0;
+  transition: margin-left .5s ease-in-out 0s;
+  box-shadow: -2px 2px 30px #333333; }
+  #viewport.nav-open {
+    margin-left: 45%; }
+
+#nav-menu {
+  display: block;
+  position: absolute;
+  width: 45%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  padding-top: 80px;
+  margin-left: -45%;
+  transition: margin-left .5s ease-in-out 0s; }
+  #nav-menu a {
+    display: block;
+    color: #333;
+    line-height: 40px;
+    font-size: 24px; }
+  #nav-menu.reveal {
+    margin-left: 0%; }
+
+#header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 80px;
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  z-index: 100; }
+  #header h2 {
+    text-align: center; }
+  #header .burger {
+    position: absolute;
+    left: 10px;
+    top: 20px;
+    cursor: pointer; }
+
+.page {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: opacity .5s ease-in-out 0s;
+  opacity: 1;
+  padding-top: 100px; }
+  .page.hidden {
+    z-index: -1;
+    opacity: 0; }
+  .page.show {
+    z-index: 1; }
+
+/*# sourceMappingURL=style.css.map */
