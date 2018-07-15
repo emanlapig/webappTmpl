@@ -5,5 +5,6 @@ var C = {
 		// init first page
 		pages[0].init();
 		$( ".burger" ).on( 'click', V.open_menu );
+		$( "#close-nav" ).on( 'click', V.close_menu );
 	}
 };

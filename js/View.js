@@ -34,9 +34,12 @@ var V = {
 			$( "#nav-menu" ).addClass( "reveal" );
 			$( "#viewport" ).addClass( "nav-open" );
 		} else {
-			$( "#nav-menu" ).removeClass( "reveal" );
-			$( "#viewport" ).removeClass( "nav-open" );
+			this.close_menu();
 		}
+	},
+	close_menu: function() {
+		$( "#nav-menu" ).removeClass( "reveal" );
+		$( "#viewport" ).removeClass( "nav-open" );
 	},
 	el_factory: function( _opts ) {
 		var options = _opts
