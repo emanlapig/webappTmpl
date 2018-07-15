@@ -39,12 +39,15 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
+  opacity: 1;
+  padding: 100px 20px 0;
   -webkit-transition: opacity 0.5s ease-in-out 0s;
   -moz-transition: opacity 0.5s ease-in-out 0s;
   -o-transition: opacity 0.5s ease-in-out 0s;
   transition: opacity 0.5s ease-in-out 0s;
-  opacity: 1;
-  padding-top: 100px; }
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
   .page.hidden {
     z-index: -1;
     opacity: 0; }
@@ -82,15 +85,28 @@ body {
   left: 0;
   height: 80px;
   width: 100%;
+  padding-top: 20px;
   background-color: #000;
   color: #fff;
-  z-index: 100; }
+  z-index: 100;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
   #header h2 {
-    text-align: center; }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    height: 60px; }
   #header .burger {
     position: absolute;
-    left: 10px;
+    height: 60px;
     top: 20px;
+    left: 0px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer; }
 
 /*# sourceMappingURL=style.css.map */

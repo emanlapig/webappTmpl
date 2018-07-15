@@ -24,6 +24,7 @@ var V = {
 				$( from[i] ).removeClass( "show" ).addClass( "hidden" );
 			}
 		}
+		$( "#header h2" ).text( M.pages[ to ].title );
 		setTimeout( function() {
 			$( [ "#", to ].join( "" ) ).removeClass( "hidden" ).addClass( "show" );
 			M.pages[ to ].init();
