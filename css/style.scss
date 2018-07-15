@@ -4,14 +4,34 @@
 $hdr-height: 80px;
 $hdr-status-bar: 20px;
 $hdr-body-height: $hdr-height - $hdr-status-bar;
+
 $menu-width: 50%;
 $menu-desktop-width: 30%;
+
+$hdr-bg: #7F518A;
+$hdr-text: #fff;
+$nav-bg: #4E125D;
+$nav-text: #BAC361;
+
+@font-face {
+	font-family: 'Muli';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Muli-Regular'), url(../fonts/Muli-Regular.ttf) format('truetype');
+}
 
 body {
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
 	font-size: 16px;
+	font-family: 'Muli';
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+h2 {
+	font-size: 18px;
+	letter-spacing: 3px;
 }
 
 #viewport {
@@ -24,7 +44,7 @@ body {
 	top: 0;
 	left: 0;
 	@include transition( margin-left, .5s, ease-in-out, 0s );
-	box-shadow: -2px 2px 30px #333333;
+	box-shadow: -2px 2px 20px #333;
 	#close-nav {
 		display: none;
 		position: absolute;
@@ -72,6 +92,7 @@ body {
 	left: 0px;
 	padding-top: 80px;
 	margin-left: -$menu-width;
+	background-color: $nav-bg;
 	@include transition( margin-left, .5s, ease-in-out, 0s );
 	@media #{$desktop-only} {
 		width: $menu-desktop-width;
@@ -79,9 +100,11 @@ body {
 	}
 	a {
 		display: block;
-		color: #333;
-		line-height: 40px;
-		font-size: 24px;
+		color: $nav-text;
+		line-height: 50px;
+		font-size: 20px;
+		padding-left: 10px;
+		text-decoration: none;
 	}
 	&.reveal {
 		margin-left: 0%;
@@ -95,8 +118,8 @@ body {
 	height: $hdr-height;
 	width: 100%;
 	padding-top: $hdr-status-bar;
-	background-color: #000;
-	color: #fff;
+	background-color: $hdr-bg;
+	color: $hdr-text;
 	z-index: 100;
 	@include box-sizing( border-box );
 	h2 {
@@ -111,7 +134,7 @@ body {
 		height: $hdr-body-height;
 		top: $hdr-status-bar;
 		left: 0px;
-		width: 40px;
+		width: 54px;
 		display: flex;
 		align-items: center;
 		justify-content: center;
