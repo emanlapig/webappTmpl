@@ -2,7 +2,22 @@
   font-family: 'Muli';
   font-style: normal;
   font-weight: 400;
-  src: local("Muli-Regular"), url(../fonts/Muli-Regular.ttf) format("truetype"); }
+  src: local("Muli-Regular"), url(../../fonts/Muli-Regular.ttf) format("truetype"); }
+@font-face {
+  font-family: 'Muli-Italic';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Muli-Italic"), url(../../fonts/Muli-Italic.ttf) format("truetype"); }
+@font-face {
+  font-family: 'Muli-Bold';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Muli-Bold"), url(../../fonts/Muli-Bold.ttf) format("truetype"); }
+@font-face {
+  font-family: 'Muli-Black';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Muli-Black"), url(../../fonts/Muli-Black.ttf) format("truetype"); }
 body {
   margin: 0;
   padding: 0;
@@ -12,12 +27,20 @@ body {
   -webkit-tap-highlight-color: transparent; }
 
 h2 {
-  font-size: 18px;
-  letter-spacing: 3px; }
+  font-family: 'Muli-Bold';
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  font-size: 14px; }
+
+h3 {
+  font-family: 'Muli-Bold';
+  font-weight: normal; }
 
 #viewport {
   display: block;
   position: absolute;
+  overflow: hidden;
   width: 100%;
   height: 100%;
   padding: 0;
@@ -74,7 +97,7 @@ h2 {
   left: 0px;
   padding-top: 80px;
   margin-left: -50%;
-  background-color: #4E125D;
+  background-color: #571E65;
   -webkit-transition: margin-left 0.5s ease-in-out 0s;
   -moz-transition: margin-left 0.5s ease-in-out 0s;
   -o-transition: margin-left 0.5s ease-in-out 0s;
@@ -89,7 +112,8 @@ h2 {
     line-height: 50px;
     font-size: 20px;
     padding-left: 10px;
-    text-decoration: none; }
+    text-decoration: none;
+    font-family: 'Muli-Bold'; }
   #nav-menu.reveal {
     margin-left: 0%; }
 

@@ -17,16 +17,16 @@ module.exports = function(grunt) {
       },
       target: {
         files: {
-          'css/style.min.css': ['css/style.css']
+          'css/min/style.min.css': ['css/style.css']
         }
       }
     },
     uglify: {
       dist: {
         files: {
-          'js/Model.min.js' : 'js/Model.js',
-          'js/View.min.js' : 'js/View.js',
-          'js/Controller.min.js' : 'js/Controller.js',
+          'js/min/Model.min.js' : 'js/Model.js',
+          'js/min/View.min.js' : 'js/View.js',
+          'js/min/Controller.min.js' : 'js/Controller.js',
         }
       }
     },
