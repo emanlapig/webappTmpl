@@ -9,5 +9,6 @@ var C = {
 			V.go_to_page( 'settings' );
 		});
 		$( "#close-nav" ).on( 'click', V.close_menu );
+		$( "#nav-menu, #header" ).on( 'touchmove', function(e) { e.preventDefault(); } );
 	}
 };

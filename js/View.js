@@ -17,18 +17,25 @@ var V = {
 			});
 		}
 	},
+	current_page: false,
 	go_to_page: function( to ) {
-		var from = $( ".page" );
-		for ( var i=0; i<from.length; i++ ) {
-			if ( $( from[i] ).hasClass( "show" ) ) {
-				$( from[i] ).removeClass( "show" ).addClass( "hidden" );
+		var from = $( ".page" )
+			, from_selector = false;
+		if ( V.current_page === to ) {
+			V.close_menu();
+		} else {
+			for ( var i=0; i<from.length; i++ ) {
+				if ( $( from[i] ).hasClass( "show" ) ) {
+					$( from[i] ).removeClass( "show" ).addClass( "hidden" );
+				}
 			}
+			$( "#header h2" ).text( M.pages[ to ].title );
+			setTimeout( function() {
+				$( [ "#", to ].join( "" ) ).removeClass( "hidden" ).addClass( "show" );
+				M.pages[ to ].init();
+				V.current_page = M.pages[ to ].selector;
+			}, 500 );
 		}
-		$( "#header h2" ).text( M.pages[ to ].title );
-		setTimeout( function() {
-			$( [ "#", to ].join( "" ) ).removeClass( "hidden" ).addClass( "show" );
-			M.pages[ to ].init();
-		}, 500 );
 	},
 	open_menu: function() {
 		if ( !$( "#nav-menu" ).hasClass( "reveal" ) ) {

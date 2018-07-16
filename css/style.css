@@ -99,6 +99,8 @@ h3 {
   .page.dark {
     background-color: #863D80;
     color: #D2CA78; }
+    .page.dark p {
+      color: #fff; }
   @media only screen and (min-width: 1025px) {
     .page {
       overflow: visible; } }

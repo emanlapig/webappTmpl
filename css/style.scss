@@ -121,6 +121,9 @@ h3 {
 	&.dark {
 		background-color: $base-light;
 		color: $highlight;
+		p {
+			color: #fff;
+		}
 	}
 	@media #{$desktop-only} {
 		overflow: visible;
