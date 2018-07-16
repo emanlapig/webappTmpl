@@ -21,21 +21,18 @@ $nav-text: #D2CA78;
 	font-weight: 400;
 	src: local('Muli-Regular'), url(../../fonts/Muli-Regular.ttf) format('truetype');
 }
-
 @font-face {
 	font-family: 'Muli-Italic';
 	font-style: normal;
 	font-weight: 400;
 	src: local('Muli-Italic'), url(../../fonts/Muli-Italic.ttf) format('truetype');
 }
-
 @font-face {
 	font-family: 'Muli-Bold';
 	font-style: normal;
 	font-weight: 400;
 	src: local('Muli-Bold'), url(../../fonts/Muli-Bold.ttf) format('truetype');
 }
-
 @font-face {
 	font-family: 'Muli-Black';
 	font-style: normal;
@@ -128,7 +125,7 @@ h3 {
 	height: 100%;
 	top: 0px;
 	left: 0px;
-	padding-top: 80px;
+	padding-top: $hdr-height;
 	margin-left: -$menu-width;
 	background-color: $nav-bg;
 	@include transition( margin-left, .5s, ease-in-out, 0s );
