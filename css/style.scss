@@ -9,11 +9,10 @@ $menu-width: 60%;
 $menu-desktop-width: 30%;
 
 // http://paletton.com/#uid=74v0u0kllllIxbosWgndKqj6avi
-$bg-color: #8E5189;
-$hdr-bg: #74276D;
-$hdr-text: #D2CA78;
-$nav-bg: #590952;
-$nav-text: #D2CA78;
+$base-light: #8E5189;
+$base-med: #74276D;
+$base-dark: #590952;
+$highlight: #D2CA78;
 
 @font-face {
 	font-family: 'Muli';
@@ -47,7 +46,7 @@ body {
 	font-size: 16px;
 	font-family: 'Muli';
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
-	background-color: $bg-color;
+	background-color: $base-light;
 }
 
 h2 {
@@ -113,8 +112,8 @@ h3 {
 		z-index: 1;
 	}
 	&.dark {
-		background-color: $bg-color;
-		color: $nav-text;
+		background-color: $base-light;
+		color: $highlight;
 	}
 }
 
@@ -127,7 +126,7 @@ h3 {
 	left: 0px;
 	padding-top: $hdr-height;
 	margin-left: -$menu-width;
-	background-color: $nav-bg;
+	background-color: $base-dark;
 	@include transition( margin-left, .5s, ease-in-out, 0s );
 	@media #{$desktop-only} {
 		width: $menu-desktop-width;
@@ -135,15 +134,15 @@ h3 {
 	}
 	a {
 		display: block;
-		color: $nav-text;
+		color: $highlight;
 		line-height: 50px;
 		font-size: 20px;
 		padding-left: 20px;
 		text-decoration: none;
 		font-family: 'Muli-Bold';
 		&:hover {
-			background-color: $nav-text;
-			color: $nav-bg;
+			background-color: $highlight;
+			color: $base-dark;
 		}
 	}
 	&.reveal {
@@ -158,8 +157,8 @@ h3 {
 	height: $hdr-height;
 	width: 100%;
 	padding-top: $hdr-status-bar;
-	background-color: $hdr-bg;
-	color: $hdr-text;
+	background-color: $base-med;
+	color: $highlight;
 	z-index: 100;
 	@include box-sizing( border-box );
 	h2 {
