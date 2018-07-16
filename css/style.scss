@@ -75,7 +75,7 @@ h3 {
 	margin: 0;
 	top: 0;
 	left: 0;
-	@include transition( margin-left, .5s, ease-in-out, 0s );
+	@include transition( margin-left, .2s, ease-in-out, 0s );
 	box-shadow: 2px 2px 20px #000;
 	#close-nav {
 		display: none;
@@ -140,7 +140,7 @@ h3 {
 	padding-top: $hdr-height;
 	margin-left: -$menu-width;
 	background-color: $base-dark;
-	@include transition( margin-left, .5s, ease-in-out, 0s );
+	@include transition( margin-left, .2s, ease-in-out, 0s );
 	@media #{$desktop-only} {
 		width: $menu-desktop-width;
 		margin-left: -$menu-desktop-width;

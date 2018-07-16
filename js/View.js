@@ -32,9 +32,10 @@ var V = {
 			$( "#header h2" ).text( M.pages[ to ].title );
 			setTimeout( function() {
 				$( [ "#", to ].join( "" ) ).removeClass( "hidden" ).addClass( "show" );
+				document.getElementById( to ).scrollTo( 0, 0 );
 				M.pages[ to ].init();
 				V.current_page = M.pages[ to ].selector;
-			}, 500 );
+			}, 400 );
 		}
 	},
 	open_menu: function() {
