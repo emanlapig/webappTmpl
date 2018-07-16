@@ -21,6 +21,7 @@ var V = {
 	go_to_page: function( to ) {
 		var from = $( ".page" )
 			, from_selector = false;
+		document.getElementById( to ).scrollTo( 0, 0 );
 		if ( V.current_page === to ) {
 			V.close_menu();
 		} else {
@@ -32,7 +33,6 @@ var V = {
 			$( "#header h2" ).text( M.pages[ to ].title );
 			setTimeout( function() {
 				$( [ "#", to ].join( "" ) ).removeClass( "hidden" ).addClass( "show" );
-				document.getElementById( to ).scrollTo( 0, 0 );
 				M.pages[ to ].init();
 				V.current_page = M.pages[ to ].selector;
 			}, 400 );
