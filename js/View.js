@@ -13,7 +13,7 @@ var V = {
 			$( "#nav-menu" ).append( link );
 			$( link ).on( 'click', function(e) {
 				V.go_to_page( $( e.target ).attr( 'data-selector' ) );
-				V.open_menu();
+				V.close_menu();
 			});
 		}
 	},
@@ -46,7 +46,7 @@ var V = {
 		var options = _opts
 			, tag = options.tag
 			, attrs = options.attrs
-			, html = options.html
+			, html = options.html;
 		if ( !tag ) {
 			return false;
 		}

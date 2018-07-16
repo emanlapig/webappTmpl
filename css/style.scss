@@ -5,13 +5,15 @@ $hdr-height: 80px;
 $hdr-status-bar: 20px;
 $hdr-body-height: $hdr-height - $hdr-status-bar;
 
-$menu-width: 50%;
+$menu-width: 60%;
 $menu-desktop-width: 30%;
 
-$hdr-bg: #7F518A;
-$hdr-text: #fff;
-$nav-bg: #571E65;
-$nav-text: #BAC361;
+// http://paletton.com/#uid=74v0u0kllllIxbosWgndKqj6avi
+$bg-color: #8E5189;
+$hdr-bg: #74276D;
+$hdr-text: #D2CA78;
+$nav-bg: #590952;
+$nav-text: #D2CA78;
 
 @font-face {
 	font-family: 'Muli';
@@ -48,6 +50,7 @@ body {
 	font-size: 16px;
 	font-family: 'Muli';
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	background-color: $bg-color;
 }
 
 h2 {
@@ -74,7 +77,7 @@ h3 {
 	top: 0;
 	left: 0;
 	@include transition( margin-left, .5s, ease-in-out, 0s );
-	box-shadow: -2px 2px 20px #333;
+	box-shadow: 2px 2px 20px #000;
 	#close-nav {
 		display: none;
 		position: absolute;
@@ -102,6 +105,7 @@ h3 {
 	height: 100%;
 	opacity: 1;
 	padding: $hdr-height + 20px 20px 0;
+	background-color: #fff;
 	@include transition( opacity, .5s, ease-in-out, 0s );
 	@include box-sizing( border-box );
 	&.hidden {
@@ -110,6 +114,10 @@ h3 {
 	}
 	&.show {
 		z-index: 1;
+	}
+	&.dark {
+		background-color: $bg-color;
+		color: $nav-text;
 	}
 }
 
@@ -133,9 +141,13 @@ h3 {
 		color: $nav-text;
 		line-height: 50px;
 		font-size: 20px;
-		padding-left: 10px;
+		padding-left: 20px;
 		text-decoration: none;
 		font-family: 'Muli-Bold';
+		&:hover {
+			background-color: $nav-text;
+			color: $nav-bg;
+		}
 	}
 	&.reveal {
 		margin-left: 0%;
@@ -160,16 +172,21 @@ h3 {
 		margin: 0;
 		height: $hdr-body-height;
 	}
-	.burger {
+	i {
 		position: absolute;
 		height: $hdr-body-height;
 		top: $hdr-status-bar;
-		left: 0px;
 		width: 54px;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		cursor: pointer;
+	}
+	.burger {
+		left: 0px;
+	}
+	.cog {
+		right: 0px;
 	}
 }
 
