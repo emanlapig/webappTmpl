@@ -21,11 +21,14 @@
 body {
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
   font-size: 16px;
   font-family: 'Muli';
   -webkit-tap-highlight-color: transparent;
-  background-color: #8E5189; }
+  background-color: #863D80; }
+  @media only screen and (min-width: 1025px) {
+    body {
+      overflow: hidden; } }
 
 h2 {
   font-family: 'Muli-Bold';
@@ -68,6 +71,9 @@ h3 {
         margin-left: 30%; } }
     #viewport.nav-open #close-nav {
       display: block; }
+  @media only screen and (min-width: 1025px) {
+    #viewport {
+      overflow-y: scroll; } }
 
 .page {
   display: block;
@@ -77,6 +83,7 @@ h3 {
   opacity: 1;
   padding: 100px 20px 0;
   background-color: #fff;
+  overflow: scroll;
   -webkit-transition: opacity 0.5s ease-in-out 0s;
   -moz-transition: opacity 0.5s ease-in-out 0s;
   -o-transition: opacity 0.5s ease-in-out 0s;
@@ -90,8 +97,11 @@ h3 {
   .page.show {
     z-index: 1; }
   .page.dark {
-    background-color: #8E5189;
+    background-color: #863D80;
     color: #D2CA78; }
+  @media only screen and (min-width: 1025px) {
+    .page {
+      overflow: visible; } }
 
 #nav-menu {
   display: block;
@@ -157,5 +167,8 @@ h3 {
     left: 0px; }
   #header .cog {
     right: 0px; }
+  @media only screen and (min-width: 1025px) {
+    #header {
+      position: absolute; } }
 
 /*# sourceMappingURL=style.css.map */

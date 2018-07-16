@@ -8,8 +8,8 @@ $hdr-body-height: $hdr-height - $hdr-status-bar;
 $menu-width: 60%;
 $menu-desktop-width: 30%;
 
-// http://paletton.com/#uid=74v0u0kllllIxbosWgndKqj6avi
-$base-light: #8E5189;
+//http://paletton.com/#uid=74v0u0klllltmeGpmi0hkoFdkr+
+$base-light: #863D80;
 $base-med: #74276D;
 $base-dark: #590952;
 $highlight: #D2CA78;
@@ -42,11 +42,14 @@ $highlight: #D2CA78;
 body {
 	margin: 0;
 	padding: 0;
-	overflow: hidden;
+	-webkit-overflow-scrolling: touch;
 	font-size: 16px;
 	font-family: 'Muli';
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
 	background-color: $base-light;
+	@media #{$desktop-only} {
+		overflow: hidden;
+	}
 }
 
 h2 {
@@ -92,6 +95,9 @@ h3 {
 			display: block;
 		}
 	}
+	@media #{$desktop-only} {
+		overflow-y: scroll;
+	}
 }
 
 .page {
@@ -102,6 +108,7 @@ h3 {
 	opacity: 1;
 	padding: $hdr-height + 20px 20px 0;
 	background-color: #fff;
+	overflow: scroll;
 	@include transition( opacity, .5s, ease-in-out, 0s );
 	@include box-sizing( border-box );
 	&.hidden {
@@ -114,6 +121,9 @@ h3 {
 	&.dark {
 		background-color: $base-light;
 		color: $highlight;
+	}
+	@media #{$desktop-only} {
+		overflow: visible;
 	}
 }
 
@@ -183,6 +193,9 @@ h3 {
 	}
 	.cog {
 		right: 0px;
+	}
+	@media #{$desktop-only} {
+		position: absolute;
 	}
 }
 
