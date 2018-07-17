@@ -124,6 +124,13 @@ h3 {
 	overflow: scroll;
 	@include transition( opacity, .5s, ease-in-out, 0s );
 	@include box-sizing( border-box );
+	a {
+		color: $highlight;
+		text-decoration: none;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
 	&.hidden {
 		z-index: -10!important;
 		opacity: 0;

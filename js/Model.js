@@ -15,6 +15,13 @@ var M = {
 
 			}
 		},
+		subpage: {
+			title: "Sub Page",
+			selector: "subpage",
+			init: function() {
+
+			}
+		},
 		settings: {
 			title: "Settings",
 			selector: "settings",
@@ -25,8 +32,8 @@ var M = {
 	}
 };
 
-// pages registry
-var pages = [
+// pages to go in the nav
+var nav_pages = [
 	M.pages.dashboard,
 	M.pages.sample,
 	M.pages.settings

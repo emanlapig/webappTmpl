@@ -1,14 +1,14 @@
 // View.js
 var V = {
 	build_nav: function() {
-		for ( var i=0; i<pages.length; i++ ) {
+		for ( var i=0; i<nav_pages.length; i++ ) {
 			var link = this.el_factory({
 				tag: 'a',
 				attrs: [
 					{ attr: 'href', val: 'javascript:0;' },
-					{ attr: 'data-selector', val: pages[i].selector }
+					{ attr: 'data-selector', val: nav_pages[i].selector }
 				],
-				html: pages[i].title,
+				html: nav_pages[i].title,
 			});
 			$( "#nav-menu" ).append( link );
 			$( link ).on( 'click', function(e) {
