@@ -14,7 +14,6 @@ var M = {
 			init: function() {
 
 			}
-
 		},
 		settings: {
 			title: "Settings",

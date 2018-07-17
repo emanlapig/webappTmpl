@@ -19,8 +19,7 @@ var V = {
 	},
 	current_page: false,
 	go_to_page: function( to ) {
-		var from = $( ".page" )
-			, from_selector = false;
+		var from = $( ".page" );
 		document.getElementById( to ).scrollTo( 0, 0 );
 		if ( V.current_page === to ) {
 			V.close_menu();
@@ -35,7 +34,7 @@ var V = {
 				$( [ "#", to ].join( "" ) ).removeClass( "hidden" ).addClass( "show" );
 				M.pages[ to ].init();
 				V.current_page = M.pages[ to ].selector;
-			}, 400 );
+			}, 500 );
 		}
 	},
 	open_menu: function() {

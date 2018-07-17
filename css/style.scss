@@ -96,7 +96,6 @@ h3 {
 		height: 100%;
 		left: 0;
 		top: 0;
-		z-index: 200;
 	}
 	&.nav-open {
 		margin-left: $menu-width;
@@ -104,6 +103,7 @@ h3 {
 			margin-left: $menu-desktop-width;
 		}
 		#close-nav {
+			z-index: 200;
 			display: block;
 		}
 	}
@@ -118,17 +118,18 @@ h3 {
 	width: 100%;
 	height: 100%;
 	opacity: 1;
+	z-index: 1;
 	padding: $hdr-height + 20px 20px 80px;
 	background-color: #fff;
 	overflow: scroll;
 	@include transition( opacity, .5s, ease-in-out, 0s );
 	@include box-sizing( border-box );
 	&.hidden {
-		z-index: -1;
+		z-index: -10!important;
 		opacity: 0;
 	}
 	&.show {
-		z-index: 1;
+		z-index: 10!important;
 	}
 	&.dark {
 		background-color: $base-light;
@@ -217,7 +218,6 @@ h3 {
 .enoch-reg {
 	font-family: 'Torzu-Regular';
 }
-
 .enoch-mono {
 	font-family: 'Torzu-Mono';
 }
