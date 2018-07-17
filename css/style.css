@@ -18,6 +18,16 @@
   font-style: normal;
   font-weight: 400;
   src: local("Muli-Black"), url(../../fonts/Muli-Black.ttf) format("truetype"); }
+@font-face {
+  font-family: 'Torzu-Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Torzu-Regular"), url(../../fonts/Torzu-Regular.ttf) format("truetype"); }
+@font-face {
+  font-family: 'Torzu-Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Torzu-Mono"), url(../../fonts/Torzu-Mono.ttf) format("truetype"); }
 body {
   margin: 0;
   padding: 0;
@@ -172,5 +182,20 @@ h3 {
   @media only screen and (min-width: 1025px) {
     #header {
       position: absolute; } }
+
+.enoch-reg {
+  font-family: 'Torzu-Regular'; }
+
+.enoch-mono {
+  font-family: 'Torzu-Mono'; }
+
+p.enoch-reg, p.enoch-mono {
+  font-size: 20px;
+  line-height: 28px;
+  text-align: right; }
+
+h3.enoch-reg, h3.enoch-mono {
+  font-size: 24px;
+  text-align: right; }
 
 /*# sourceMappingURL=style.css.map */
