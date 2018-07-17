@@ -212,7 +212,9 @@ h3 {
       display: block;
       font-family: 'Muli-Black';
       font-size: 28px;
-      margin: 0; }
+      margin: 0;
+      letter-spacing: -1px;
+      font-weight: normal !important; }
     .dash-item .description span {
       color: #fff; }
 
