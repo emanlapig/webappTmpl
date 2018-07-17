@@ -191,6 +191,31 @@ h3 {
     #header {
       position: absolute; } }
 
+.dash-item {
+  cursor: pointer; }
+  .dash-item .dash-icon {
+    display: inline-flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    background-color: #74276D; }
+    .dash-item .dash-icon.large {
+      width: 100px;
+      height: 100px; }
+      .dash-item .dash-icon.large .symbol {
+        font-size: 80px; }
+  .dash-item .description {
+    display: inline-block;
+    width: 64%;
+    margin-left: 4px; }
+    .dash-item .description h1 {
+      display: block;
+      font-family: 'Muli-Black';
+      font-size: 28px;
+      margin: 0; }
+    .dash-item .description span {
+      color: #fff; }
+
 .enoch-reg {
   font-family: 'Torzu-Regular'; }
 

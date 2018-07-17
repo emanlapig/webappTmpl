@@ -225,6 +225,38 @@ h3 {
 	}
 }
 
+.dash-item {
+	cursor: pointer;
+	.dash-icon {
+		display: inline-flex;
+		box-sizing: border-box;
+		justify-content: center;
+		align-items: center;
+		background-color: $base-med;
+		&.large {
+			width: 100px;
+			height: 100px;
+			.symbol {
+				font-size: 80px;
+			}
+		}
+	}
+	.description {
+		display: inline-block;
+		width: 64%;
+		margin-left: 4px;
+		h1 {
+			display: block;
+			font-family: 'Muli-Black';
+			font-size: 28px;
+			margin: 0;
+		}
+		span {
+			color: #fff;
+		}
+	}
+}
+
 .enoch-reg {
 	font-family: 'Torzu-Regular';
 }

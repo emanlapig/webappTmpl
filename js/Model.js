@@ -5,7 +5,12 @@ var M = {
 			title: "Dashboard",
 			selector: "dashboard",
 			init: function() {
-
+				$( "#subpage-link" ).on( 'click', function(e) {
+					V.go_to_page( 'subpage' );
+				});
+				$( "#dash-item-0" ).on( 'click', function(e) {
+					V.go_to_page( 'sample' );
+				});
 			}
 		},
 		sample: {
