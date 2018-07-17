@@ -119,7 +119,7 @@ h3 {
 	height: 100%;
 	opacity: 1;
 	z-index: 1;
-	padding: $hdr-height + 20px 20px 80px;
+	padding: $hdr-height + 20px 20px 40px;
 	background-color: #fff;
 	overflow: scroll;
 	@include transition( opacity, .5s, ease-in-out, 0s );
@@ -127,6 +127,9 @@ h3 {
 	&.hidden {
 		z-index: -10!important;
 		opacity: 0;
+	}
+	&.gone {
+		display: none;
 	}
 	&.show {
 		z-index: 10!important;

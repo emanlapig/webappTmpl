@@ -92,7 +92,7 @@ h3 {
   height: 100%;
   opacity: 1;
   z-index: 1;
-  padding: 100px 20px 80px;
+  padding: 100px 20px 40px;
   background-color: #fff;
   overflow: scroll;
   -webkit-transition: opacity 0.5s ease-in-out 0s;
@@ -105,6 +105,8 @@ h3 {
   .page.hidden {
     z-index: -10 !important;
     opacity: 0; }
+  .page.gone {
+    display: none; }
   .page.show {
     z-index: 10 !important; }
   .page.dark {
