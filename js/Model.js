@@ -3,9 +3,6 @@ var M = {
 	pages: {
 		init: function( page ) {
 			var page = this[ page ];
-			if ( M.settings.hdr_eno ) {
-				$( "#header h2" ).text( page.title.split( "" ).reverse().join( "" ) );
-			}
 			page.init();
 		},
 		dashboard: {
@@ -54,7 +51,6 @@ var M = {
 						continue;
 					}
 					var text = $( hdr_mono[i] ).text();
-					$( hdr_mono[i] ).text( text.split( "" ).reverse().join( "" ) );
 					if ( !$( hdr_mono[i] ).hasClass( "enoch-mono" ) ) {
 						$( hdr_mono[i] ).addClass( "enoch-mono" );
 					} else {
