@@ -28,6 +28,9 @@
   font-style: normal;
   font-weight: 400;
   src: local("Torzu-Mono"), url(../../fonts/Torzu-Mono.ttf) format("truetype"); }
+.rtl {
+  text-align: right; }
+
 body {
   margin: 0;
   padding: 0;

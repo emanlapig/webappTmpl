@@ -50,6 +50,9 @@ $highlight: #D2CA78;
 	font-weight: 400;
 	src: local('Torzu-Mono'), url(../../fonts/Torzu-Mono.ttf) format('truetype');
 }
+.rtl {
+	text-align: right;
+}
 
 body {
 	margin: 0;
