@@ -203,6 +203,7 @@ form {
 		line-height: 50px;
 		font-size: 20px;
 		padding-left: 20px;
+		padding-right: 10px;
 		text-decoration: none;
 		font-family: 'Muli-Bold';
 		&:hover {
@@ -289,17 +290,17 @@ form {
 }
 
 .enoch-reg {
-	font-family: 'Torzu-Regular';
+	font-family: 'Torzu-Regular'!important;
+	text-align: right;
 }
 .enoch-mono {
-	font-family: 'Torzu-Mono';
+	font-family: 'Torzu-Mono'!important;
+	text-align: right;
 }
 p.enoch-reg, p.enoch-mono {
 	font-size: 20px;
 	line-height: 28px;
-	text-align: right;
 }
 h3.enoch-reg, h3.enoch-mono {
 	font-size: 24px;
-	text-align: right;
 }

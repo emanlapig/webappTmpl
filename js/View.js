@@ -23,6 +23,7 @@ var V = {
 		if ( V.current_page === to ) {
 			V.close_menu();
 		} else {
+			$( ".page *" ).unbind();
 			for ( var i=0; i<from.length; i++ ) {
 				if ( $( from[i] ).hasClass( "show" ) ) {
 					$( from[i] ).removeClass( "show" ).addClass( "hidden" );
@@ -33,7 +34,7 @@ var V = {
 				$( ".page.hidden" ).addClass( "gone" );
 				$( [ "#", to ].join( "" ) ).removeClass( "gone" );
 				document.getElementById( to ).scrollTo( 0, 0 );
-				M.pages[ to ].init();
+				M.pages.init( to );
 				V.current_page = M.pages[ to ].selector;
 				setTimeout( function() { 
 					$( [ "#", to ].join( "" ) ).removeClass( "hidden" ).addClass( "show" );
