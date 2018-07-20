@@ -3,6 +3,9 @@ var M = {
 	pages: {
 		init: function( page ) {
 			var page = this[ page ];
+			if ( M.settings.hdr_eno ) {
+				$( "#header h2" ).text( page.title.split( "" ).reverse().join( "" ) );
+			}
 			page.init();
 		},
 		dashboard: {

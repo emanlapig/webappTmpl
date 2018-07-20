@@ -30,11 +30,11 @@ var V = {
 				}
 			}
 			$( "#header h2" ).text( M.pages[ to ].title );
+			M.pages.init( to );
 			setTimeout( function() {
 				$( ".page.hidden" ).addClass( "gone" );
 				$( [ "#", to ].join( "" ) ).removeClass( "gone" );
 				document.getElementById( to ).scrollTo( 0, 0 );
-				M.pages.init( to );
 				V.current_page = M.pages[ to ].selector;
 				setTimeout( function() { 
 					$( [ "#", to ].join( "" ) ).removeClass( "hidden" ).addClass( "show" );
