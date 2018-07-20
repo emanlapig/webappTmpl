@@ -156,6 +156,32 @@ h3 {
 	}
 }
 
+form {
+	input[type="checkbox"] {
+		opacity: 0;
+		+ label {
+			&:after {
+				content: "\ea53";
+				display: block;
+				position: absolute;
+				width: 20px;
+				height: 20px;
+				margin-top: -20px;
+				opacity: 1;
+				z-index: 100;
+				font-family: 'icomoon';
+			}
+		}
+		&:checked {
+			+ label {
+				&:after {
+					content: "\ea52";
+				}
+			}
+		}
+	}
+}
+
 #nav-menu {
 	display: block;
 	position: absolute;
