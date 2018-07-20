@@ -290,14 +290,20 @@ form {
 }
 
 .enoch-reg {
-	font-family: 'Torzu-Regular'!important;
+	font-family: 'Torzu-Regular';
 	text-align: right;
 }
 .enoch-mono {
-	font-family: 'Torzu-Mono'!important;
+	font-family: 'Torzu-Mono';
 	text-align: right;
 }
 p.enoch-reg, p.enoch-mono {
 	font-size: 22px;
 	line-height: 28px;
+}
+#nav-menu a.enoch-reg {
+	font-family: 'Torzu-Regular';
+}
+#nav-menu a.enoch-mono {
+	font-family: 'Torzu-Mono';
 }
