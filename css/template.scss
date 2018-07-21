@@ -141,6 +141,17 @@ h3 {
 			color: #fff;
 		}
 	}
+	&.hidden {
+		z-index: -10;
+		opacity: 0;
+	}
+	&.gone {
+		display: none;
+	}
+	&.show {
+		z-index: 10;
+		opacity: 1;
+	}
 	@media #{$desktop-only} {
 		overflow: visible;
 	}
@@ -306,16 +317,4 @@ p.enoch-reg, p.enoch-mono {
 }
 #nav-menu a.enoch-mono {
 	font-family: 'Torzu-Mono';
-}
-
-.hidden {
-	z-index: -10!important;
-	opacity: 0;
-}
-.gone {
-	display: none!important;
-}
-.show {
-	z-index: 10!important;
-	opacity: 1;
 }

@@ -115,6 +115,14 @@ h3 {
     color: #D2CA78; }
     .page.dark p {
       color: #fff; }
+  .page.hidden {
+    z-index: -10;
+    opacity: 0; }
+  .page.gone {
+    display: none; }
+  .page.show {
+    z-index: 10;
+    opacity: 1; }
   @media only screen and (min-width: 1025px) {
     .page {
       overflow: visible; } }
@@ -257,16 +265,5 @@ p.enoch-reg, p.enoch-mono {
 
 #nav-menu a.enoch-mono {
   font-family: 'Torzu-Mono'; }
-
-.hidden {
-  z-index: -10 !important;
-  opacity: 0; }
-
-.gone {
-  display: none !important; }
-
-.show {
-  z-index: 10 !important;
-  opacity: 1; }
 
 /*# sourceMappingURL=template.css.map */
