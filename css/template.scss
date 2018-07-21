@@ -304,8 +304,9 @@ p.enoch-reg, p.enoch-mono {
 	opacity: 0;
 }
 .gone {
-	display: none;
+	display: none!important;
 }
 .show {
 	z-index: 10!important;
+	opacity: 1;
 }
