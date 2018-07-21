@@ -110,13 +110,6 @@ h3 {
     text-decoration: none; }
     .page a:hover {
       text-decoration: underline; }
-  .page.hidden {
-    z-index: -10 !important;
-    opacity: 0; }
-  .page.gone {
-    display: none; }
-  .page.show {
-    z-index: 10 !important; }
   .page.dark {
     background-color: #863D80;
     color: #D2CA78; }
@@ -135,7 +128,7 @@ form input[type="checkbox"] {
     position: absolute;
     width: 20px;
     height: 20px;
-    margin-top: -22px;
+    margin-top: -21px;
     opacity: 1;
     z-index: 100;
     font-family: 'icomoon'; }
@@ -255,5 +248,15 @@ p.enoch-reg, p.enoch-mono {
 
 #nav-menu a.enoch-mono {
   font-family: 'Torzu-Mono'; }
+
+.hidden {
+  z-index: -10 !important;
+  opacity: 0; }
+
+.gone {
+  display: none; }
+
+.show {
+  z-index: 10 !important; }
 
 /*# sourceMappingURL=template.css.map */
