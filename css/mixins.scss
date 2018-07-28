@@ -19,3 +19,63 @@ $desktop-only: "only screen and ( min-width:1025px )";
 $desktop-tablet-landscape: "only screen and ( min-width:1024px )";
 $tablet: "only screen and ( min-width:768px ) and ( max-width:1024px )";
 $mobile: "only screen and ( max-width:767px )";
+
+// variables
+$hdr-height: 80px;
+$hdr-status-bar: 20px;
+$hdr-body-height: $hdr-height - $hdr-status-bar;
+
+$menu-width: 60%;
+$menu-desktop-width: 30%;
+
+//http://paletton.com/#uid=74v0u0klllltmeGpmi0hkoFdkr+
+//$base-xlight: #985993;
+//$base-light: #863D80;
+//$base-med: #74276D;
+//$base-dark: #590952;
+//$highlight: #D2CA78;
+//$base-xlight: #785D97;
+//$base-light: #614385;
+//$base-med: #4D2D73;
+//$base-dark: #2B0C4F;
+//$highlight: #D2CA78;
+//http://paletton.com/#uid=74e280klllltmeGpmi0hkoFdkr+
+$base-xlight: #587790;
+$base-light: #3F627F;
+$base-med: #2A4F6E;
+$base-dark: #0B2E4B;
+$highlight: #D2CA78;
+
+@mixin template-theme( $base-xlight:#587790, $base-light:#3F627F, $base-med:#2A4F6E, $base-dark:#0B2E4B, $highlight:#D2CA78 ) {
+	body {
+		background-color: $base-light;
+	}
+	.page {
+		a {
+			color: $highlight;
+		}
+		&.dark {
+			background-color: $base-light;
+			color: $highlight;
+		}
+	}
+	#nav-menu {
+		background-color: $base-dark;
+		a {
+			color: $highlight;
+			&:hover {
+				background-color: $highlight;
+				color: $base-dark;
+			}
+		}
+	}
+	#header {
+		background-color: $base-med;
+		color: $highlight;
+	}
+	.dash-item {
+		.dash-icon {
+			background-color: $base-med;
+		}
+	}
+}

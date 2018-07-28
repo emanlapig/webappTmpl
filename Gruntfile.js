@@ -6,7 +6,9 @@ module.exports = function(grunt) {
     sass: {
       dist: {
         files: {
-          'css/template.css' : 'css/template.scss'
+          'css/template.css' : 'css/template.scss',
+          'css/theme_turq.css' : 'css/theme_turq.scss',
+          'css/theme_purple.css' : 'css/theme_purple.scss',
         }
       }
     },
@@ -17,7 +19,9 @@ module.exports = function(grunt) {
       },
       target: {
         files: {
-          'css/min/template.min.css': ['css/template.css']
+          'css/min/template.min.css': ['css/template.css'],
+          'css/min/theme_turq.min.css': ['css/theme_turq.css'],
+          'css/min/theme_purple.min.css': ['css/theme_purple.css']
         }
       }
     },

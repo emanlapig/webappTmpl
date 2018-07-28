@@ -132,6 +132,7 @@ form input[type="checkbox"] {
   margin: 16px 8px;
   display: block; }
   form input[type="checkbox"] + label {
+    cursor: pointer;
     display: block;
     position: absolute;
     margin-left: 24px;
@@ -247,6 +248,16 @@ form a {
       font-weight: normal !important; }
     .dash-item .description span {
       color: #fff; }
+
+.swatch-group {
+  cursor: pointer; }
+  .swatch-group .swatch {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
 
 .enoch-reg {
   font-family: 'Torzu-Regular';

@@ -40,11 +40,18 @@ var M = {
 					M.settings.hdr_eno = ( M.settings.hdr_eno )? false : true;
 					M.save_settings();
 				});
+				$( "#clear-settings" ).on( 'click', M.clear_settings );
+				$( "div.swatch-group" ).on( 'click', function(e) {
+					var theme = $( e.target ).attr( 'data-theme' ) || $( e.target ).parent().attr( 'data-theme' ) ;
+					M.pages.settings.change_theme( theme );
+					M.settings.theme = theme;
+					M.save_settings();
+				});
 				if ( M.settings.hdr_eno ) {
 					$( "#hdr-font" ).attr( "checked", "checked" );
 				}
 			},
-			toggle_hdr_font: function(e) {
+			toggle_hdr_font: function() {
 				var hdr_mono = $( "h2, h3" );
 				for ( var i=0; i<hdr_mono.length; i++ ) {
 					if ( $( hdr_mono[i] ).hasClass( "always" ) ) {
@@ -57,11 +64,16 @@ var M = {
 						$( hdr_mono[i] ).removeClass( "enoch-mono" );
 					}
 				}
+			},
+			change_theme: function( theme ) {
+				var path = [ "css/min/theme_", theme, ".min.css" ].join( "" );
+				$( "#theme-stylesheet" ).attr( 'href', path );
 			}
 		}
 	},
 	settings: {
-		hdr_eno: false
+		hdr_eno: false,
+		theme: "turq"
 	},
 	save_settings: function() {
 		window.localStorage.setItem( "settings", JSON.stringify( M.settings ) );
@@ -77,7 +89,12 @@ var M = {
 		if ( M.settings.hdr_eno ) {
 			M.pages.settings.toggle_hdr_font();
 		}
+		M.pages.settings.change_theme( M.settings.theme );
 	},
+	clear_settings: function() {
+		window.localStorage.removeItem( "settings" );
+		document.location.reload();
+	}
 };
 
 // pages to go in the nav

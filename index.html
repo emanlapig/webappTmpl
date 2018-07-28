@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=10.0, minimum-scale=1, user-scalable=1"/>
 	<title>Web App Template</title>
 	<link rel="stylesheet" href="css/min/template.min.css">
+	<link rel="stylesheet" href="css/min/theme_turq.min.css" id="theme-stylesheet">
 	<link rel="stylesheet" href="fonts/icomoon/style.css">
 	<script type="text/javascript" src="lib/jquery-3.2.0.min.js"></script>
 	<script type="text/javascript" src="js/min/Model.min.js"></script>
@@ -55,6 +56,14 @@
 			<form name="settings">
 				<input type="checkbox" id="hdr-font">
 				<label for="hdr-font">Enochian headings</label>
+				<span>Color Theme</span>
+				<div class="swatch-group" id="swatch-turq" data-theme="turq">
+					<div class="swatch" style="background-color:#587790;"></div><div class="swatch" style="background-color:#3F627F;"></div><div class="swatch" style="background-color:#2A4F6E;"></div><div class="swatch" style="background-color:#0B2E4B;"></div>
+				</div>
+				<div class="swatch-group" id="swatch-purple" data-theme="purple">
+					<div class="swatch" style="background-color:#985993;"></div><div class="swatch" style="background-color:#863D80;"></div><div class="swatch" style="background-color:#74276D;"></div><div class="swatch" style="background-color:#590952;"></div>
+				</div>
+				<a href="javascript:0;" id="clear-settings">Clear Settings</a>
 			</form>
 		</div>
 
