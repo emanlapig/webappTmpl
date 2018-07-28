@@ -1,17 +1,17 @@
 @font-face {
-  font-family: 'Enochian-Mono';
-  src:  url('fonts/Enochian-Mono.eot?qpo6yq');
-  src:  url('fonts/Enochian-Mono.eot?qpo6yq#iefix') format('embedded-opentype'),
-    url('fonts/Enochian-Mono.ttf?qpo6yq') format('truetype'),
-    url('fonts/Enochian-Mono.woff?qpo6yq') format('woff'),
-    url('fonts/Enochian-Mono.svg?qpo6yq#Enochian-Mono') format('svg');
+  font-family: 'Torzu-Mono';
+  src:  url('fonts/Torzu-Mono.eot?5cygsk');
+  src:  url('fonts/Torzu-Mono.eot?5cygsk#iefix') format('embedded-opentype'),
+    url('fonts/Torzu-Mono.ttf?5cygsk') format('truetype'),
+    url('fonts/Torzu-Mono.woff?5cygsk') format('woff'),
+    url('fonts/Torzu-Mono.svg?5cygsk#Torzu-Mono') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'Enochian-Mono' !important;
+  font-family: 'Torzu-Mono' !important;
   speak: none;
   font-style: normal;
   font-weight: normal;
