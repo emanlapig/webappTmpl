@@ -149,7 +149,7 @@ form input[type="checkbox"] {
       font-family: 'icomoon'; }
   form input[type="checkbox"]:checked + label:after {
     content: "\ea52"; }
-form a {
+form > a, form > span {
   display: block;
   padding: 20px 0px 4px; }
 

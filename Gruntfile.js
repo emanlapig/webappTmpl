@@ -7,8 +7,9 @@ module.exports = function(grunt) {
       dist: {
         files: {
           'css/template.css' : 'css/template.scss',
-          'css/theme_turq.css' : 'css/theme_turq.scss',
+          'css/theme_blue.css' : 'css/theme_blue.scss',
           'css/theme_purple.css' : 'css/theme_purple.scss',
+          'css/theme_turq.css' : 'css/theme_turq.scss',
         }
       }
     },
@@ -20,8 +21,9 @@ module.exports = function(grunt) {
       target: {
         files: {
           'css/min/template.min.css': ['css/template.css'],
+          'css/min/theme_blue.min.css': ['css/theme_blue.css'],
+          'css/min/theme_purple.min.css': ['css/theme_purple.css'],
           'css/min/theme_turq.min.css': ['css/theme_turq.css'],
-          'css/min/theme_purple.min.css': ['css/theme_purple.css']
         }
       }
     },

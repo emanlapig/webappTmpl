@@ -174,7 +174,7 @@ form {
 			}
 		}
 	}
-	a {
+	& > a, & > span {
 		display: block;
 		padding: 20px 0px 4px;
 	}
