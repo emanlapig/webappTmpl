@@ -30,8 +30,13 @@ var V = {
 				}
 			}
 			$( "#header h2" ).text( M.pages[ to ].title );
-			M.pages.init( to );
+			if ( V.current_page ) {
+				M.pages.init( to );
+			}
 			setTimeout( function() {
+				if ( !V.current_page ) {
+					M.pages.init( to );
+				}
 				$( ".page.hidden" ).addClass( "gone" );
 				$( [ "#", to ].join( "" ) ).removeClass( "gone" );
 				document.getElementById( to ).scrollTo( 0, 0 );
