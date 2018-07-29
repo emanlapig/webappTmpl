@@ -138,8 +138,8 @@ h3 {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 76px;
-    height: 76px;
+    width: 80px;
+    height: 80px;
     margin: 6px;
     background-color: #2A4F6E;
     cursor: pointer; }
@@ -149,7 +149,7 @@ h3 {
 
 .tall-num {
   font-family: "Neuton-Regular" !important;
-  font-size: 24px;
+  font-size: 28px;
   transform: scaleY(1.2);
   margin-top: -4px; }
 
