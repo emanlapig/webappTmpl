@@ -47,6 +47,15 @@ $highlight: #D2CA78;
 			color: $highlight;
 		}
 	}
+	.icon-grid {
+		.grid-icon {
+			background-color: $base-med;
+		}
+	}
+	.grid-icon:hover, .dash-item:hover .dash-icon {
+		background-color: $highlight !important;
+		color: $base-med;
+	}
 	#nav-menu {
 		background-color: $base-dark;
 		a {

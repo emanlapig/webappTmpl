@@ -25,6 +25,12 @@
 	src: local('Muli-Black'), url(../../fonts/Muli-Black.ttf) format('truetype');
 }
 @font-face {
+	font-family: 'Neuton-Regular';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Neuton-Regular'), url(../../fonts/Neuton-Regular.ttf) format('truetype');
+}
+@font-face {
 	font-family: 'Torzu-Regular';
 	font-style: normal;
 	font-weight: 400;
@@ -35,9 +41,6 @@
 	font-style: normal;
 	font-weight: 400;
 	src: local('Torzu-Mono'), url(../../fonts/Torzu-Mono.ttf) format('truetype');
-}
-.rtl {
-	text-align: right;
 }
 
 body {
@@ -141,6 +144,38 @@ h3 {
 	@media #{$desktop-only} {
 		overflow: visible;
 	}
+}
+
+.icon-grid {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	.grid-icon {
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		width: 76px;
+		height: 76px;
+		margin: 6px;
+		background-color: $base-med;
+		cursor: pointer;
+		span {
+			transform: scaleY(1.2);
+			margin-top: -4px;
+		}
+	}
+}
+
+.tall-num {
+	font-family: 'Neuton-Regular';
+	font-size: 24px;
+	transform: scaleY(1.2);
+	margin-top: -4px;
+}
+
+.grid-icon:hover, .dash-item:hover .dash-icon {
+	background-color: $highlight !important;
+	color: $base-med;
 }
 
 form {
@@ -314,4 +349,12 @@ p.enoch-reg, p.enoch-mono {
 }
 #nav-menu a.enoch-mono {
 	font-family: 'Torzu-Mono';
+}
+
+// global
+.rtl {
+	text-align: right;
+}
+.center {
+	text-align: center;
 }
