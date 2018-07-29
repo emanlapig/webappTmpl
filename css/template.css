@@ -147,7 +147,7 @@ h3 {
       margin-top: -4px; }
 
 .tall-num {
-  font-family: 'Neuton-Regular';
+  font-family: "Neuton-Regular" !important;
   font-size: 24px;
   transform: scaleY(1.2);
   margin-top: -4px; }
