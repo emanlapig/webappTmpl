@@ -29,8 +29,8 @@ var V = {
 					$( from[i] ).removeClass( "show" ).addClass( "hidden" );
 				}
 			}
-			$( "#header h2" ).text( M.pages[ to ].title );
 			if ( V.current_page ) {
+				$( "#header h2" ).text( M.pages[ to ].title );
 				M.pages.init( to );
 			}
 			setTimeout( function() {
