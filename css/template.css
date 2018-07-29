@@ -94,12 +94,13 @@ h3 {
   display: block;
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: calc( 100% - 80px );
   opacity: 1;
   z-index: 1;
-  padding: 100px 20px 40px;
+  top: 80px;
+  padding: 20px 20px 40px;
   background-color: #fff;
-  overflow: scroll;
+  overflow: auto;
   -webkit-transition: opacity 0.5s ease-in-out 0s;
   -moz-transition: opacity 0.5s ease-in-out 0s;
   -o-transition: opacity 0.5s ease-in-out 0s;
